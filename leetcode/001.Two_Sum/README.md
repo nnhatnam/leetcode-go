@@ -35,7 +35,7 @@ Output: [0,1]
 
 
 
-###Analyze
+###Analyze requirements
 
 - Input: nums and target  
 - Output: a slice contains two numbers. The sum of two numbers must add up to target  
