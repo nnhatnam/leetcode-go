@@ -59,6 +59,35 @@ func addTwoNumbers2(l1 *ListNode, l2 *ListNode) *ListNode {
 	//return dummy.Next
 }
 
+//another way to do recursion. it's not a good way to do it since we create a bunch of dummy node and it change l1
+func addTwoNumbers3(l1 *ListNode, l2 *ListNode) *ListNode {
+	sum := l1.Val + l2.Val
+	digit , carry := sum % 10 , sum / 10
+	result := &ListNode{Val: digit}
+
+	if l1.Next != nil || l2.Next != nil || carry > 0 {
+		if l1.Next == nil {
+			l1 = &ListNode{Val: 0 }
+		} else {
+			l1 = l1.Next
+		}
+		l1.Val += carry
+
+		if l2.Next == nil {
+			l2 = &ListNode{Val: 0 }
+		} else {
+			l2 = l2.Next
+		}
+		result.Next = addTwoNumbers3(l1, l2)
+	}
+
+
+	return result
+
+	//return dummy.Next
+}
+
+
 
 //Need to analyze why these are faster (without using dummy node)
 //func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {

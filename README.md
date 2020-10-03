@@ -2,8 +2,8 @@
 
 | #    |  Title                                                       |  Solution                                                                                                                                           |  Options |  Difficulty |  Tags |
 |:--------:|:--------------------------------------------------------------|:--------:|:--------:|:--------:|:--------:|
-| 0001 | Two Sum                                                                             |              | 2      | Easy       | `hashmap`          |
-| 0002 | Add Two Numbers                                                                     |              | 2     | Medium     | `singlylinkedlist`          |
+| 0001 | Two Sum                                                                             |  [Solution](https://github.com/nnhatnam/leetcode-go/tree/master/leetcode/001.Two_Sum)            | 2      | Easy       | `hashmap`          |
+| 0002 | Add Two Numbers                                                                     |              | 2     | Medium     | `singlylinkedlist` , `recursion`  |
 | 0003 | Longest Substring Without Repeating Characters                                      |              |      | Medium     |           |
 | 0004 | Median of Two Sorted Arrays                                                         |              |      | Hard       |           |
 | 0005 | Longest Palindromic Substring                                                       |                                                                                                                                    |      | Medium     |           |

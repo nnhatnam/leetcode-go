@@ -59,7 +59,7 @@ func TestEdgeCases(t *testing.T) {
 	}
 
 	for _ , tcase := range testcases {
-		result := addTwoNumbers2(arrToList(tcase.param1), arrToList(tcase.param2))
+		result := addTwoNumbers3(arrToList(tcase.param1), arrToList(tcase.param2))
 		index := 0
 		t.Log("Output   : ", listToArr(result))
 		t.Log("Expected : ", tcase.outputs.result)

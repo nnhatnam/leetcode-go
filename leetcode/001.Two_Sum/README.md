@@ -1,4 +1,4 @@
-###Description
+### Description
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have ***exactly* one solution**, and you may not use the same element twice.
@@ -35,7 +35,7 @@ Output: [0,1]
 
 
 
-###Analyze requirements
+### Analyze requirements
 
 - Input: nums and target  
 - Output: a slice contains two numbers. The sum of two numbers must add up to target  
@@ -69,5 +69,5 @@ func twoSum2(nums []int, target int) []int
     - Can use set or other data structure that take O(1) in insert and select 
 
 
-###Helpful sources
+### Helpful sources
 -  [Two Sum](https://web.stanford.edu/class/cs9/sample_probs/TwoSum.pdf)
