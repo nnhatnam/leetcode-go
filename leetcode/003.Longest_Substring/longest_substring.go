@@ -7,6 +7,10 @@ func lengthOfrunner(r int) int {
 	return r + 1
 }
 
+func lengthBetweenTwoRunner(r1, r2 int) int {
+	return r2 - r1 + 1
+}
+
 func isInMap(key rune , m map[rune]int) bool {
 	_ , ok := m[key]
 	return ok
@@ -21,24 +25,28 @@ func lengthOfLongestSubstring(s string) int {
 	r2 := 0
 	max := 0
 
+	for index, str := range s {
 
-	for index , v := range s {
-		if isInMap(v, hashmap) && hashmap[v] >= r1 {
-			tempLength := lengthOfrunner(r2 - 1) - lengthOfrunner(r1) + 1
-			if max < tempLength {
-				max = tempLength
+		dupIndex, ok := hashmap[str]
+
+		if ok && dupIndex >= r1 {
+			temp := lengthBetweenTwoRunner(r1, r2)
+			if temp > max {
+				max = temp
 			}
-
-			r1 = hashmap[v] + 1
+			r1 = dupIndex + 1
 		}
+		hashmap[str] = index
 
-		hashmap[v] = index
+
 		r2++
 	}
-	tempLength := lengthOfrunner(r2 - 1) - lengthOfrunner(r1) + 1
-	if max < tempLength {
-		max = tempLength
+	r2--
+	temp := lengthBetweenTwoRunner(r1, r2)
+	if temp > max {
+		max = temp
 	}
+
 	return max
 
 }
