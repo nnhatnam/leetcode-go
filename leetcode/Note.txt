@@ -1,0 +1,4 @@
+Technique
+
+strings array
+1. Horizontal scanning
