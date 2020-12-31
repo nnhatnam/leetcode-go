@@ -1,0 +1,31 @@
+In-Place O(n) Time O(1) Space With Explanation & Analysis from joshgebara
+(https://leetcode.com/problems/shuffle-the-array/discuss/675956/In-Place-O(n)-Time-O(1)-Space-With-Explanation-and-Analysis)
+
+Complexity:
+    Time: O(n) where n = nums.length
+    Space: O(1)
+Prerequisites:
+    Some bit manipulations would be helpful in understanding this algorithms. This algorithms uses:
+        Bitwise AND &
+        Bitwise OR |
+        Left Shift <<
+        Right Shift >>
+        Binary Representations of Numbers
+    Intuition:
+        - This algorithms relies on the constraint 1 <= num <= 10^3. This means the largest possible number in the nums array
+        is 1000
+        - The binary representation of 1000 is 1111101000
+        - If we count the number of bits in 1111101000 we get 10.
+        - Because the largest possible number only uses 10 bits. So we can fit two numbers into on 32-bit binary representation
+        - This means we can store two numbers in one binary representation without the fear of overwriting a number
+    Implementation:
+        As shown in the description of the problem, the array starts in the form [x1,x2,...,xn,y1,y2,...,yn]
+        This algorithms will use two loops:
+            - Loop L1 will group numbers into pairs [x1, y1], [x2, y2]... [xn,yn] by storing both numbers [xn] and [yn] in
+            one binary representation
+            - Loop L1 will then place these pairs in their final position
+    How do we store number in one binary representation ?
+
+
+
+
