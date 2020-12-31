@@ -3,3 +3,4 @@ that a + b + c = 0.
 
 flattern json 
 cartesian product 
+RLE encoding
