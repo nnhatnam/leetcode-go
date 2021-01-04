@@ -1,4 +1,4 @@
-package _512_Number_of_Good_Pairs
+package _26_Beautiful_Arrangement
 
 import (
 	"github.com/stretchr/testify/assert"
@@ -8,7 +8,8 @@ import (
 
 
 func TestSolution(t *testing.T) {
-	t1 := []int{1,1,1,1}
-	assert.Equal(t, 6 , numIdenticalPairs(t1))
+	t1 := 2
+	assert.Equal(t, 2 , countArrangement(t1))
 }
+
 
