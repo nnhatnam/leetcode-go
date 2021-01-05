@@ -1,5 +1,6 @@
 package _603_Design_Parking_System
 
+//Not my solution
 type ParkingSystem struct {
 	max      []int
 	occupied []int
